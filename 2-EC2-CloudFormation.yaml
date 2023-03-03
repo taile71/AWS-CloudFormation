@@ -1,0 +1,12 @@
+Resources:
+  MyInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0b029b1931b347543
+      AvailabilityZone: us-west-2a
+      InstanceType: t2.micro
+      Tags:
+        - Key: Name
+          Value: my-test-instance
+        - Key: Env
+          Value: Dev
